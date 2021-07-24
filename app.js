@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 //step 3 or final call router
 app.use(require('./router/auth'));
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 // Middelware 
 app.listen(PORT, () => {
